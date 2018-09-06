@@ -40,7 +40,7 @@ paths:
           content:
             application/problem+json:
               schema:
-                $ref: '#/components/schemas/ProblemDetails'
+                $ref: 'https://raw.githubusercontent.com/cherrrycheng/5GC_APIs/master/TS29122_CommonData.yaml#/components/schemas/ProblemDetails'
 
     post:
       summary: Creates a new subscription resource for monitoring event notification
@@ -85,7 +85,7 @@ paths:
           content:
             application/problem+json:
               schema:
-                $ref: '#/components/schemas/ProblemDetails'
+                $ref: 'https://raw.githubusercontent.com/cherrrycheng/5GC_APIs/master/TS29122_CommonData.yaml#/components/schemas/ProblemDetails'
 
   /{scsAsId}/subscriptions/{subscriptionId}:
     get:
@@ -117,7 +117,7 @@ paths:
           content:
             application/problem+json:
               schema:
-                $ref: '#/components/schemas/ProblemDetails'
+                $ref: 'https://raw.githubusercontent.com/cherrrycheng/5GC_APIs/master/TS29122_CommonData.yaml#/components/schemas/ProblemDetails'
 
     put:
       summary: Updates/replaces an existing subscription resource
@@ -155,7 +155,7 @@ paths:
           content:
             application/problem+json:
               schema:
-                $ref: '#/components/schemas/ProblemDetails'
+                $ref: 'https://raw.githubusercontent.com/cherrrycheng/5GC_APIs/master/TS29122_CommonData.yaml#/components/schemas/ProblemDetails'
 
     delete:
       summary: Deletes an already existing monitoring event subscription
@@ -192,7 +192,7 @@ paths:
           content:
             application/problem+json:
               schema:
-                $ref: '#/components/schemas/ProblemDetails'
+                $ref: 'https://raw.githubusercontent.com/cherrrycheng/5GC_APIs/master/TS29122_CommonData.yaml#/components/schemas/ProblemDetails'
 components:
   schemas: 
     MonitoringEventSubscription:
