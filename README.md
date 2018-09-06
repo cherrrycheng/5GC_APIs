@@ -3,7 +3,8 @@
 API version 1.PreR15.1.0 (Sept. 2018)
 
 The links below will open the Swagger Editor and auto-load the OpenAPI YAML file of each NF service:
-
+## NEF
+* [Nef Management](https://editor.swagger.io/?url=https://github.com/cherrrycheng/5GC_APIs/blob/master/TS29122_Nnef_MonitoringEvent.yaml)
 ## NRF
 * [NF Management](https://editor.swagger.io/?url=https://raw.githubusercontent.com/jdegre/5GC_APIs/master/TS29510_Nnrf_NFManagement.yaml)
 * [NF Discovery](https://editor.swagger.io/?url=https://raw.githubusercontent.com/jdegre/5GC_APIs/master/TS29510_Nnrf_NFDiscovery.yaml)
