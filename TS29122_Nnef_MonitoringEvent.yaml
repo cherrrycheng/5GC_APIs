@@ -119,44 +119,6 @@ paths:
               schema:
                 $ref: 'https://raw.githubusercontent.com/cherrrycheng/5GC_APIs/master/TS29122_CommonData.yaml#/components/schemas/ProblemDetails'
 
-    put:
-      summary: Updates/replaces an existing subscription resource
-      tags:
-        - MonitoringEvent API subscription level PUT Operation
-      parameters:
-        - name: scsAsId
-          in: path
-          description: Identifier of the SCS/AS
-          required: true
-          schema:
-            type: string
-        - name: subscriptionId
-          in: path
-          description: Identifier of the subscription resource
-          required: true
-          schema:
-            type: string
-      requestBody:
-        description: Parameters to update/replace the existing subscription
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/MonitoringEventSubscription'
-      responses:
-        '200':
-          description: OK (Successful update of the subscription)
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/MonitoringEventSubscription'
-        default:
-          description: Unexpected error
-          content:
-            application/problem+json:
-              schema:
-                $ref: 'https://raw.githubusercontent.com/cherrrycheng/5GC_APIs/master/TS29122_CommonData.yaml#/components/schemas/ProblemDetails'
-
     delete:
       summary: Deletes an already existing monitoring event subscription
       tags:
